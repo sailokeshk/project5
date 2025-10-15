@@ -1,49 +1,40 @@
 
 import { useState } from 'react';
 import './App.css';
-import Dynstrliterals from './Section2labprog/DynStrliterals';
-import { ForceUpdateWrapperfuncomp } from './Section2labprog/CntrbtnusingFuncomp';
-import { Hookscounterbtn } from './Section3labprog/Counterbtn';
-import Iterativerender from './Section3labprog/Iterativerender';
+import ApiUseEffect from './Section3labprog/APIintegration';
+import SimpleForm from './Section3labprog/React_Formprog';
+
 
 function App(){
     return(
     <div className="App">
 
-      <Dynstrliterals/>
-      <ForceUpdateWrapperfuncomp/>
-      <Hookscounterbtn/>
-      <Iterativerender/>
+      <ApiUseEffect/>
+      <SimpleForm/>
+   
     </div>
   );
 
 }
-  export default Dynstrliterals;  
+export default App;
 
 // function App(){
  
 //    const [messageFromChild, setMessageFromChild] = useState("");
-
 //   // Function to receive data from child
 //   const handleChildData = (messageFromChild) => {
 //     setMessageFromChild(messageFromChild);
 //   };
 //   return(
-//     <div class-Name="App">
-//       <ForceUpdateWrapperfuncomp/>
-//       <Hookscounterbtn/>   
-      
+//     <div class-Name="App">  
+     
 //       <h2>Parent Component</h2>
 //       <p><strong>Message from Child:</strong> {messageFromChild}</p>
-//       <Student name="Aarav" sendMessage={handleChildData} /> 
-
-     
-
+//       <Student name="Aarav" sendMessage={handleChildData} />    
 //     </div>
 //   );
-
 // }
-// export default App;
+
 
 
 

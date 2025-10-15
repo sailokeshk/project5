@@ -1,19 +1,15 @@
+//d. Write a React program to implement the forms in react
 import React, { useState } from 'react';
 
 const SimpleForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-
   const handleSubmit = (e) => {
     e.preventDefault(); // Prevent page reload
-    //alert(`Name: {name}:{email}`);
      alert(`Name:${name}:${email}`);
-     //alert(`Name:{name}:email`);
     setName("");
     setEmail("");
   };
-
-
   return (
     <div>
       <h2>Simple React Form</h2>
@@ -45,5 +41,4 @@ const SimpleForm = () => {
     </div>
   );
 };
-
 export default SimpleForm;
